@@ -58,6 +58,7 @@ html {
 }
 
 .navbar .menu li a {
+    display: block;
     color: #fff;
     font-size: 22px;
     font-weight: 500;
@@ -454,30 +455,30 @@ footer span a:hover {
         font-size: 35px;
     }
 
-    .home .home-content a{
+    .home .home-content a {
         font-size: 23px;
         padding: 10px 30px;
     }
 
-    .max-width{
+    .max-width {
         max-width: 800px;
     }
 
-    .about .about-content .column{
+    .about .about-content .column {
         width: 100%;
     }
 
-    .about .about-content .left{
+    .about .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
 
-    .about .about-content .right{
+    .about .about-content .right {
         flex: 100%;
     }
 
-    .teams .carousel .card img{
+    .teams .carousel .card img {
         height: 483px;
         width: 800px;
         flex: 100%;
@@ -499,9 +500,11 @@ footer span a:hover {
     .home .home-content .text-3 {
         font-size: 50px;
     }
-    .navbar .logo a{
+
+    .navbar .logo a {
         font-size: 30px;
     }
+
     .home .home-content .text-2 {
         font-size: 40px;
 
@@ -511,148 +514,73 @@ footer span a:hover {
         font-size: 25px;
     }
 
-    .item{
-        width: 5%;
+
+    .newbox {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
-    .teams .carousel .card img{
+    .item {
+        /* width: 5%; */
+        width: 20vw;
+        height: 200px;
+        background-color: lightblue;
+        border-radius: 6px;
+    }
+
+    .teams .carousel .card img {
         height: 250px;
         width: 360px;
-        
-        
     }
-    
-} 
+
+}
 
 @media (max-width: 467px) {
-    
+
     .home .home-content .text-3 {
         font-size: 25px;
     }
 
-    .item{
+    .item {
         width: 5%;
     }
 
-    .teams .carousel .card img{
+    .teams .carousel .card img {
         height: 187px;
-        width: 297px;  
+        width: 297px;
     }
 
-    .contact .contact-content .row .info{
+    .contact .contact-content .row .info {
         margin-left: 10px;
         font-size: 13px;
         font-weight: 300;
     }
-    
-    .contact .right form .field input{
+
+    .contact .right form .field input {
         font-size: 11px;
     }
 
-    .contact .right form .textarea textarea{
+    .contact .right form .textarea textarea {
         font-size: 11px;
     }
 
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 947px) {
-    .max-width {
-        padding: 0 50px;
+    .item {
+        /* width: 5%; */
+        width: 20vw;
+        height: 200px;
+        background-color: lightblue;
+        border-radius: 6px;
     }
 
-    .menu-btn {
-        display: block;
-        z-index: 999;
+    .teams .carousel .card img {
+        height: 250px;
+        width: 360px;
     }
 
-    .menu-btn i.active:before {
-        content: "\f00d";
+    .item:hover {
+        flex: 3;
+        background: rgb(255, 136, 0);
     }
 
-    .navbar .menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100;
-        top: 0;
-        background: #080c6f;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-
-    .navbar .menu.active{
-        left: 0;
-    }
-
-    .navbar .menu li {
-        display: block;
-    }
-
-    .navbar .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-
-    .home .home-content .text-2 {
-        font-size: 70px;
-
-    }
-
-    .home .home-content .text-3 {
-        font-size: 35px;
-    }
-
-    .home .home-content a {
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-
-    .max-width {
-        max-width: 800px;
-    }
-
-    .about .about-content .column {
-        width: 100%;
-    }
-
-    .about .about-content .column .left {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-
-    .about .about-content .column .right {
-        flex: 100%;
-    }
-
-    .services .serv-content .card{
-        width: calc(50% - 10%);
-        margin-bottom: 20px;
-    }
-
-    .column .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
-
-
-     
-
-}  */
+}
